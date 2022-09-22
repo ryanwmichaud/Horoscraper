@@ -72,7 +72,7 @@ function scrape(sign){
         .then(response => {
             const html = response.data;
             const $ = cheerio.load(html);
-            const hor = elleUrl + '\n' + $('p').text()
+            const hor =  '\n' + $('p').text()
             //console.log(hor);
             console.log('k');
             return {
